@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+    tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/colorPrimary"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textColor="@android:color/darker_gray"
+
+
+            android:textSize="30sp" />
+
+    <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/colorPrimary"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textColor="@color/font"
+
+            android:textSize="40sp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/transitions_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btnApaga"
+                    style="@style/ActionButtonStyle"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/arvo"
+                    android:soundEffectsEnabled="true"
+                    android:text="ac"
+
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btnVolta"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:text="del"
+                    android:typeface="normal" />
+
+
+            <Button
+                    android:id="@+id/btnPorcentagem"
+                    style="@style/ActionButtonStyle"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="%"
+                    android:typeface="normal" />
+
+
+            <Button
+                    android:id="@+id/btnDivisao"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="÷"
+                    android:typeface="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btn7"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="@string/_7"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btn8"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="8"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btn9"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+
+                    android:fontFamily="@font/arvo"
+                    android:text="9"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btnMultiplicacao"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="*"
+                    android:typeface="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btn4"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="4"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btn5"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="5"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btn6"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+
+                    android:fontFamily="@font/arvo"
+                    android:text="6"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btnMenos"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+
+                    android:ellipsize="none"
+                    android:fontFamily="@font/arvo"
+                    android:soundEffectsEnabled="true"
+                    android:text="-"
+                    android:typeface="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btn1"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="1"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btn2"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="2"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btn3"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+
+                    android:fontFamily="@font/arvo"
+                    android:text="3"
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btnMais"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+
+                    android:fontFamily="@font/arvo"
+                    android:soundEffectsEnabled="true"
+                    android:text="+"
+                    android:typeface="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+
+            <Button
+                    android:id="@+id/btn0"
+                    style="@style/NumberButtonStyle"
+                    android:layout_weight="2"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="0"
+
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btnPonto"
+                    style="@style/NumberButtonStyle"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/arvo"
+                    android:text="."
+                    android:typeface="normal" />
+
+            <Button
+                    android:id="@+id/btnResultado"
+                    style="@style/ActionButtonStyle"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+
+                    android:fontFamily="@font/arvo"
+                    android:text="="
+                    android:typeface="normal" />
+
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
